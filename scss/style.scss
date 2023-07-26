@@ -274,6 +274,12 @@ box-shadow: 1px 29px 39px -29px rgba(66, 68, 90, 1);
     background-color: $main-color;
 }
 
+
+
+
+
+//================== MEDIA QUERRIES ============================
+
 @media (max-width: 576px){
 
     aside{
@@ -432,11 +438,13 @@ box-shadow: 1px 29px 39px -29px rgba(66, 68, 90, 1);
         &--heading{
             font-size: 2rem;
             padding: 2em;
+            padding-bottom: 1.7em;
          }
 
         &--content{
         font-size: 1.5rem;
         padding: 2em;
+        padding-top: 0em;
         }
 
     }
@@ -446,22 +454,31 @@ box-shadow: 1px 29px 39px -29px rgba(66, 68, 90, 1);
 
 @media(min-width: 1024px){
     .about{
-        display: flex;
 
         &__img{
             width: 82%;
-            height: 75%;
+            height: 80%;
             background-position: 25%;
             z-index: 0;
             }
         
         &__text{
             width: 43%;
-            height: 45%;
-            position: absolute;
-            z-index: 100;
+            height: 44%;
             left: 55%;
             top: 45%;
+          
+            &--heading{
+            font-size: 2rem;
+            padding: 2.5em;
+            padding-bottom: 1.7em;
+         }
+
+        &--content{
+        font-size: 1.5rem;
+        padding: 2em;
+        padding-top: 0em;
+        }
         
     }
 }
@@ -470,13 +487,12 @@ box-shadow: 1px 29px 39px -29px rgba(66, 68, 90, 1);
 @media (min-width: 1280px){
 
     .about{
-        display: flex;
     
         &__img{
             width: 72%;
             height: 80%;
-            background-position: 100%;
-            z-index: 0;
+            background-position: 127%;
+            
            
             
         }
@@ -484,8 +500,6 @@ box-shadow: 1px 29px 39px -29px rgba(66, 68, 90, 1);
         &__text{
             width: 36%;
             height: 44%;
-            position: absolute;
-            z-index: 100;
             left: 60%;
             top: 45%;
     
@@ -494,11 +508,13 @@ box-shadow: 1px 29px 39px -29px rgba(66, 68, 90, 1);
             &--heading{
                 font-size: 2rem;
                 padding: 2em;
+                padding-top: 2.8em;
              }
     
             &--content{
             font-size: 1.5rem;
             padding: 2em;
+            padding-top: 0em;
             }
     
         }
@@ -525,22 +541,18 @@ box-shadow: 1px 29px 39px -29px rgba(66, 68, 90, 1);
     }
 
     .about{
-        display: flex;
+    
     
         &__img{
             width: 65%;
             height: 80%;
-            background-position: 0%;
-            z-index: 0;
-            margin-left: 4em;
+            margin-left: 10%;
             
         }
     
         &__text{
             width: 30%;
             height: 50%;
-            position: absolute;
-            z-index: 100;
             left: 60%;
             top: 45%;
     
@@ -549,11 +561,13 @@ box-shadow: 1px 29px 39px -29px rgba(66, 68, 90, 1);
             &--heading{
                 font-size: 2rem;
                 padding: 2em;
+                padding-top: 4em;
              }
     
             &--content{
             font-size: 1.5rem;
             padding: 2em;
+            padding-top: 0em;
             }
     
         }
@@ -564,22 +578,19 @@ box-shadow: 1px 29px 39px -29px rgba(66, 68, 90, 1);
 @media (min-width: 1910px){
 
     .about{
-        display: flex;
+        
     
         &__img{
             width: 50%;
             height: 80%;
             background-position: 0%;
-            z-index: 0;
-            margin-left: 22em;
+            margin-left: 12%;
             
         }
     
         &__text{
             width: 23%;
             height: 45%;
-            position: absolute;
-            z-index: 100;
             left: 55%;
             top: 45%;
     
@@ -588,11 +599,13 @@ box-shadow: 1px 29px 39px -29px rgba(66, 68, 90, 1);
             &--heading{
                 font-size: 2rem;
                 padding: 2em;
+                padding-top: 2.5em;
              }
     
             &--content{
             font-size: 1.5rem;
             padding: 2em;
+            padding-top: 0em;
             }
     
         }
