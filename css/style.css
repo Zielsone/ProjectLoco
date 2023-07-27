@@ -195,21 +195,52 @@ aside .btn-container a:hover::after aside .btn-container a:focus::after {
   text-align: center;
   text-transform: uppercase;
   color: #fff;
-  font-size: 1.8rem;
-  padding-top: 2em;
+  font-size: 2rem;
+  padding-top: 5em;
   padding-right: 1.5em;
   padding-left: 1.5em;
 }
 .about__text--content {
+  font-size: 1.2em;
   text-align: center;
   color: #fff;
   line-height: 2em;
   padding: 2em 3em;
+  padding-top: 5em;
 }
 
-#clear {
+.offers {
   height: 100vh;
   background-color: #59a3cf;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  margin-bottom: 1em;
+}
+.offers__img img {
+  grid-row: 1/2;
+  width: 100%;
+  height: 100%;
+}
+.offers__text {
+  text-align: center;
+  color: #fff;
+}
+.offers__text--heading {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2rem;
+  padding-top: 5em;
+  padding-right: 1.5em;
+  padding-left: 1.5em;
+}
+.offers__text--content {
+  font-size: 1.2em;
+  text-align: center;
+  line-height: 2em;
+  padding: 2em 3em;
+  padding-top: 5em;
 }
 
 @media (max-width: 576px) {
@@ -262,14 +293,15 @@ aside .btn-container a:hover::after aside .btn-container a:focus::after {
   }
   .about__text--heading {
     font-size: 2.5rem;
-    padding-top: 2em;
+    padding-top: 2.5em;
     padding-right: 1.5em;
     padding-left: 1.5em;
   }
   .about__text--content {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     line-height: 2em;
     padding: 2em 3em;
+    padding-top: 4em;
   }
 }
 @media (min-width: 768px) {
@@ -319,6 +351,34 @@ aside .btn-container a:hover::after aside .btn-container a:focus::after {
     font-size: 1.5rem;
     padding: 2em;
     padding-top: 0em;
+  }
+  .offers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .offers__img {
+    align-items: center;
+    align-self: flex-end;
+    width: 82%;
+    height: 75%;
+    z-index: 0;
+  }
+  .offers__img img {
+    width: 100%;
+    height: 100%;
+  }
+  .offers__text {
+    align-self: start;
+    width: 55%;
+    height: 42%;
+    position: absolute;
+    z-index: 100;
+    background-color: #fff;
+    margin-bottom: 20em;
+    margin-left: 2em;
+    color: black;
   }
 }
 @media (min-width: 1024px) {

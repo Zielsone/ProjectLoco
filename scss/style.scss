@@ -250,17 +250,19 @@ box-shadow: 1px 29px 39px -29px rgba(66, 68, 90, 1);
             text-align: center;
             text-transform: uppercase;
             color: #fff;
-            font-size: 1.8rem;
-            padding-top: 2em;
+            font-size: 2rem;
+            padding-top: 5em;
             padding-right: 1.5em;
             padding-left: 1.5em;
          }
 
         &--content{
+            font-size: 1.2em;
         text-align: center;
         color: #fff;
         line-height: 2em;
         padding: 2em 3em;
+        padding-top: 5em;
 
         }
 
@@ -269,9 +271,44 @@ box-shadow: 1px 29px 39px -29px rgba(66, 68, 90, 1);
 
 
 
-#clear{
+.offers{
     height: 100vh;
     background-color: $main-color;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    margin-bottom: 1em;
+
+    &__img{
+        img{
+        grid-row: 1/2;
+        width: 100%;
+        height: 100%;
+        }
+    }
+
+    &__text{
+        text-align: center;
+        color: #fff;
+
+        &--heading{
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 2rem;
+            padding-top: 5em;
+            padding-right: 1.5em;
+            padding-left: 1.5em;
+        }
+
+        &--content {
+            font-size: 1.2em;
+        text-align: center;
+        line-height: 2em;
+        padding: 2em 3em;
+        padding-top: 5em;
+        }
+    }
 }
 
 //================== MEDIA QUERRIES ============================
@@ -363,15 +400,16 @@ box-shadow: 1px 29px 39px -29px rgba(66, 68, 90, 1);
     
             &--heading{
                 font-size: 2.5rem;
-                padding-top: 2em;
+                padding-top: 2.5em;
                 padding-right: 1.5em;
                 padding-left: 1.5em;
              }
     
             &--content{
-            font-size: 1.2rem;
+            font-size: 1.3rem;
             line-height: 2em;
             padding: 2em 3em;
+            padding-top: 4em;
     
             }
     
@@ -409,7 +447,7 @@ box-shadow: 1px 29px 39px -29px rgba(66, 68, 90, 1);
         padding: 1em;
         font-weight: 200;
     }
-}
+    }
 
 .about{
     display: flex;
@@ -446,6 +484,41 @@ box-shadow: 1px 29px 39px -29px rgba(66, 68, 90, 1);
     }
 }
 
+.offers{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &__img{
+        align-items: center;
+        align-self: flex-end;
+        width: 82%;
+        height: 75%;
+        z-index: 0;
+        img{
+        width: 100%;
+        height: 100%;
+        }
+    }
+    
+    
+
+    &__text{
+        align-self: start;
+        width: 55%;
+        height: 42%;
+        position: absolute;
+        z-index: 100;
+        background-color: #fff;
+        margin-bottom: 20em;
+        margin-left: 2em;
+        color: black;
+        
+        
+        
+    }
+}
 }
 
 @media(min-width: 1024px){
