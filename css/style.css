@@ -20,7 +20,7 @@ html {
 }
 
 body {
-  font-family: "Merriweather", serif;
+  font-family: "Cormorant Garamond", serif;
   height: 100vh;
 }
 
@@ -120,14 +120,16 @@ aside .btn-container a:hover::after aside .btn-container a:focus::after {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20em;
+  gap: 3em;
 }
 .nav__items--link {
   position: relative;
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   padding-top: 0.5em;
   padding-bottom: 0.5rem;
+  padding-left: 2em;
+  padding-right: 2em;
   color: black;
 }
 .nav__items--link, .nav__items--link::after, .nav__items--link::before {
@@ -148,6 +150,10 @@ aside .btn-container a:hover::after aside .btn-container a:focus::after {
   transform: scaleX(1);
   transform-origin: left;
 }
+.nav__items--link:hover {
+  font-weight: 900;
+  color: #59a3cf;
+}
 
 .header {
   position: relative;
@@ -160,7 +166,7 @@ aside .btn-container a:hover::after aside .btn-container a:focus::after {
 }
 .header__title {
   position: absolute;
-  font-size: 4.5rem;
+  font-size: 6rem;
   letter-spacing: 2px;
   transform: translate(0%, -50%);
 }
@@ -173,7 +179,7 @@ aside .btn-container a:hover::after aside .btn-container a:focus::after {
   animation: floating-letters 3s ease-in-out infinite;
 }
 .header__slogan {
-  font-size: 1.3rem;
+  font-size: 1.6rem;
   padding: 1em;
   font-weight: 200;
 }
@@ -207,11 +213,13 @@ aside .btn-container a:hover::after aside .btn-container a:focus::after {
   left: 55%;
   color: #fff;
   padding: 6em;
-  text-align: center;
 }
 .about__text--heading {
   font-size: 3rem;
+  text-transform: uppercase;
+  padding-bottom: 2em;
 }
 .about__text--content {
-  font-size: 1.2rem;
+  font-size: 1.6rem;
+  line-height: 1.6em;
 }/*# sourceMappingURL=style.css.map */
