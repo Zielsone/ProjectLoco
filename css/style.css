@@ -31,7 +31,7 @@ body {
 }
 
 aside {
-  z-index: 100000;
+  z-index: 777;
   font-family: "Roboto", sans-serif;
   background-color: white;
   position: sticky;
@@ -131,9 +131,10 @@ aside .btn-container a:hover::after aside .btn-container a:focus::after {
   padding-left: 2em;
   padding-right: 2em;
   color: black;
+  font-weight: 200;
 }
 .nav__items--link, .nav__items--link::after, .nav__items--link::before {
-  transition: transform 0.3s;
+  transition: transform 0.3s, font-weight 0.5s, color 0.5s;
 }
 .nav__items--link::after {
   content: "";
@@ -222,4 +223,109 @@ aside .btn-container a:hover::after aside .btn-container a:focus::after {
 .about__text--content {
   font-size: 1.6rem;
   line-height: 1.6em;
+}
+
+@media (max-width: 767px) and (min-width: 100px) {
+  aside {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  aside h3 {
+    display: none;
+  }
+  aside .btn-container a {
+    font-style: 1.8rem;
+    padding: 0.5em 0.3em;
+  }
+  .nav__items {
+    gap: 4em;
+  }
+  .nav__items--link {
+    font-size: 1.2rem;
+    padding-top: 0.3em;
+    padding-bottom: 1em;
+    padding-right: 1em;
+    padding-left: 1em;
+  }
+  .header__title {
+    font-size: 2.8rem;
+    letter-spacing: 2px;
+    transform: translate(0%, -60%);
+  }
+  .header__slogan {
+    font-size: 1.1rem;
+    padding: 1em;
+    font-weight: 200;
+  }
+  .about__img {
+    position: absolute;
+    width: 90%;
+    height: 320px;
+    margin-right: 0em;
+    margin-left: 0em;
+    background-position: 20%;
+    z-index: 100;
+    padding: 0;
+  }
+  .about__text {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    top: 400%;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    z-index: 0;
+  }
+  .about__text--heading {
+    padding-top: 60%;
+    padding-bottom: 1em;
+  }
+  .about__text--content {
+    padding: 2em;
+    padding-top: 0;
+  }
+}
+@media (min-width: 768px) {
+  .about {
+    padding: 0;
+  }
+  .about__img {
+    width: 100%;
+    margin-right: 0em;
+    margin-left: 0em;
+  }
+  .about__text {
+    left: 35%;
+  }
+}
+@media (min-width: 1024px) {
+  .about {
+    padding: 2em;
+  }
+  .about__img {
+    width: 80%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    margin-right: 30em;
+    margin-left: -13em;
+  }
+  .about__text {
+    left: 52%;
+    padding: 6em;
+  }
+  .about__text--heading {
+    font-size: 3rem;
+    text-transform: uppercase;
+    padding-bottom: 2em;
+  }
+  .about__text--content {
+    font-size: 1.6rem;
+    line-height: 1.6em;
+  }
 }/*# sourceMappingURL=style.css.map */
