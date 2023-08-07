@@ -30,12 +30,12 @@ body {
   max-width: 1200px;
 }
 
-aside {
+aside { /* Safari */
+  position: sticky;
+  top: 0;
   z-index: 777;
   font-family: "Roboto", sans-serif;
   background-color: white;
-  position: sticky;
-  top: 0;
   overflow: hidden;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -209,7 +209,7 @@ aside .btn-container a:hover::after aside .btn-container a:focus::after {
   width: 470px;
   height: 470px;
   position: absolute;
-  z-index: 100;
+  z-index: 0;
   top: 9%;
   left: 55%;
   color: #fff;
@@ -225,11 +225,86 @@ aside .btn-container a:hover::after aside .btn-container a:focus::after {
   line-height: 1.6em;
 }
 
+.gallery {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2em;
+  top: 120vh;
+}
+.gallery__img {
+  width: 100%;
+  height: 50vh;
+  background-image: url("../pic/IMG_6632.JPG");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: 0;
+  margin-right: 30em;
+  margin-left: -13em;
+}
+.gallery__img .arrow {
+  position: absolute;
+  bottom: 50%;
+  right: 0.3em;
+  font-size: 4rem;
+  color: #fff;
+  background-color: #59a3cf;
+  border-radius: 50%;
+  padding: 0.2em;
+}
+.gallery__text {
+  background-color: #59a3cf;
+  width: 470px;
+  height: 470px;
+  position: absolute;
+  z-index: 100;
+  top: 9%;
+  left: 55%;
+  color: #fff;
+  padding: 6em;
+}
+.gallery__text--heading {
+  font-size: 3rem;
+  text-transform: uppercase;
+  padding-bottom: 2em;
+}
+.gallery__text--content {
+  font-size: 1.6rem;
+  line-height: 1.6em;
+}
+.gallery__text--content ul {
+  padding-top: 1.5em;
+  list-style: inside;
+}
+
+.contact {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2em;
+  top: 240vh;
+}
+.contact__text {
+  font-size: 2rem;
+}
+.contact__text p {
+  padding-bottom: 1em;
+}
+.contact__text h4 {
+  padding-bottom: 2em;
+}
+
 @media (max-width: 767px) and (min-width: 100px) {
   aside {
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 777;
   }
   aside h3 {
     display: none;
@@ -289,6 +364,37 @@ aside .btn-container a:hover::after aside .btn-container a:focus::after {
     padding: 2em;
     padding-top: 0;
   }
+  .gallery__img {
+    position: absolute;
+    width: 90%;
+    height: 320px;
+    margin-right: 0em;
+    margin-left: 0em;
+    background-position: 70%;
+    z-index: 100;
+    padding: 0;
+  }
+  .gallery__text {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    top: 400%;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    z-index: 0;
+  }
+  .gallery__text--heading {
+    padding-top: 60%;
+    padding-bottom: 1em;
+  }
+  .gallery__text--content {
+    padding: 2em;
+    padding-top: 0;
+  }
 }
 @media (min-width: 768px) {
   .about {
@@ -301,6 +407,12 @@ aside .btn-container a:hover::after aside .btn-container a:focus::after {
   }
   .about__text {
     left: 35%;
+  }
+  .gallery {
+    position: static;
+  }
+  .contact {
+    position: static;
   }
 }
 @media (min-width: 1024px) {
