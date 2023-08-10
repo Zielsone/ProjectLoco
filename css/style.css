@@ -303,6 +303,10 @@ aside .btn-container a:hover::after aside .btn-container a:focus::after {
   right: 0;
   bottom: 0;
   position: fixed;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 15%;
+     object-position: 15%;
 }
 .about__img {
   position: absolute;
