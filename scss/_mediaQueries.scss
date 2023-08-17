@@ -1,149 +1,30 @@
-@media (min-width: 100px) and (max-width: 320px){
-    .about{
-        &__text{
-            height: 105vh;
+@media (max-width: 373px){
+    .wrapper{
+        .about-mobile{
+            &__imgContainer{
+                clip-path: circle(190px at 40% 40%);
+            }
         }
     }
 }
 
-@media (max-width: 767px) and (min-width: 100px){
-    aside{
+
+@media (min-width: 374px) and (max-width: 767px){
+    .wrapper{
+    .about-mobile{
         
-        h3{
-            display: none;
-        }
-
-        .btn-container{
-            a{ 
-                padding: 0.5em 0.3em;
-            }
-        }
-    }
-
-    .nav{
-   
-            &--link{
-                font-size: 1.2rem;
-                padding-top: 0.3em;
-                padding-bottom: 1em;
-                padding-right: 1em;
-                padding-left: 1em;
-            }
-        }
-    }
-
-    .header{
-        &__title{
-            font-size: 2.8rem;
-            letter-spacing: 2px;
-            transform: translate(0%, -60%);
-        }
-
-        &__slogan {
-            font-size: 1.1rem;
-            padding: 1em;
-            font-weight: 200;
-        }
-    }
-
-    .gallery{
-        &__img{
-            position: absolute;
-            width: 90%;
-            height: 320px;
-            margin-right: 0em;
-            margin-left: 0em;
-            z-index: 10;
-            padding: 0;
-        }
+        
         &__text{
-            position:absolute;
-            height: 100vh;
-            width: 100%;
-            margin: 0;
-            padding: 0;
-            top: 400%;
-            right: 0;
-            left: 0;
-            bottom: 0;
-            text-align: center;
-            z-index: 0;
-  
-            &--heading{
-                padding-top: 60%;
-                padding-bottom: 1em;
-                
-            }
-            &--content{
-                padding: 2em;
-                padding-top: 0;
-                
-            }
-        }
-    }
-
-  @media (min-width: 768px){
-     .about{
-         padding: 0;
-         &__img{
-             width: 100%;
-             margin-right: 0em;             
-             margin-left: 0em;
+         &--header{
+             font-size: 2.5rem;
          }
-         &__text{
-             left: 35%;
-         }
-    }
-
-    .gallery{
-        position: static;
-    }
-
-    .contact{
-        position: static;
-    }
-
- }
-
-
-
-@media (min-width: 1024px){
-    .about{
-    padding: 2em;
-
-        &__img{
-            width: 80%;
-            height: 100vh;
-            background-position: center;
-            background-size: cover;
-            margin-right: 30em;
-            margin-left: -13em;
-        }
-
-        &__text{
-            left: 52%;
-           
-            padding: 6em;
-    
-            &--heading{
-                font-size: 3rem;
-                text-transform: uppercase;
+     
+          &--content{
+                font-size: 1.7rem;
+                line-height: 1.5em;
                 padding-bottom: 2em;
-            }
-    
-            &--content{
-                font-size: 1.6rem;
-                line-height: 1.6em;
-            }
-        }
-
-   }
-    }
-
-
-
-
-
-
-
-
+         }
+     }
+     }
+}
+}

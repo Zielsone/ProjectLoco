@@ -8,115 +8,9 @@
             clip-path: polygon(0% 60%, 15% 65%, 34% 66%, 51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%);
   }
 }
-@media (min-width: 100px) and (max-width: 320px) {
-  .about__text {
-    height: 105vh;
-  }
-}
-@media (max-width: 767px) and (min-width: 100px) {
-  aside h3 {
-    display: none;
-  }
-  aside .btn-container a {
-    padding: 0.5em 0.3em;
-  }
-  .nav--link {
-    font-size: 1.2rem;
-    padding-top: 0.3em;
-    padding-bottom: 1em;
-    padding-right: 1em;
-    padding-left: 1em;
-  }
-}
-.header__title {
-  font-size: 2.8rem;
-  letter-spacing: 2px;
-  transform: translate(0%, -60%);
-}
-.header__slogan {
-  font-size: 1.1rem;
-  padding: 1em;
-  font-weight: 200;
-}
-
-.gallery__img {
-  position: absolute;
-  width: 90%;
-  height: 320px;
-  margin-right: 0em;
-  margin-left: 0em;
-  z-index: 10;
-  padding: 0;
-}
-.gallery__text {
-  position: absolute;
-  height: 100vh;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  top: 400%;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  text-align: center;
-  z-index: 0;
-}
-.gallery__text--heading {
-  padding-top: 60%;
-  padding-bottom: 1em;
-}
-.gallery__text--content {
-  padding: 2em;
-  padding-top: 0;
-}
-
-@media (min-width: 768px) {
-  .about {
-    padding: 0;
-  }
-  .about__img {
-    width: 100%;
-    margin-right: 0em;
-    margin-left: 0em;
-  }
-  .about__text {
-    left: 35%;
-  }
-  .gallery {
-    position: static;
-  }
-  .contact {
-    position: static;
-  }
-}
-@media (min-width: 1024px) {
-  .about {
-    padding: 2em;
-  }
-  .about__img {
-    width: 80%;
-    height: 100vh;
-    background-position: center;
-    background-size: cover;
-    margin-right: 30em;
-    margin-left: -13em;
-  }
-  .about__text {
-    left: 52%;
-    padding: 6em;
-  }
-  .about__text--heading {
-    font-size: 3rem;
-    text-transform: uppercase;
-    padding-bottom: 2em;
-  }
-  .about__text--content {
-    font-size: 1.6rem;
-    line-height: 1.6em;
-  }
-}
 .section {
   height: 100vh;
+  margin-bottom: 10em;
 }
 
 .wrapper {
@@ -125,6 +19,22 @@
   max-width: 1200px;
 }
 
+@media (max-width: 373px) {
+  .wrapper .about-mobile__imgContainer {
+    -webkit-clip-path: circle(190px at 40% 40%);
+            clip-path: circle(190px at 40% 40%);
+  }
+}
+@media (min-width: 374px) and (max-width: 767px) {
+  .wrapper .about-mobile__text--header {
+    font-size: 2.5rem;
+  }
+  .wrapper .about-mobile__text--content {
+    font-size: 1.7rem;
+    line-height: 1.5em;
+    padding-bottom: 2em;
+  }
+}
 * {
   box-sizing: border-box;
   margin: 0;
@@ -288,60 +198,52 @@ aside .btn-container a:hover::after aside .btn-container a:focus::after {
   animation: floating-letters 3s ease-in-out infinite;
 }
 
-.about {
-  position: relative;
+.about-mobile {
   height: 100vh;
-  width: 100%;
-  display: flex;
-  padding: 2em;
+  position: relative;
   overflow: hidden;
 }
-.about img {
+.about-mobile__imgContainer {
+  position: relative;
+  top: 0;
   width: 100%;
-  min-height: 100%;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  position: fixed;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: 13% 15%;
-     object-position: 13% 15%;
-}
-.about__img {
-  position: absolute;
-  width: 90%;
-  min-height: 300px;
-  -webkit-clip-path: inset(0);
-          clip-path: inset(0);
-  top: 0;
-  right: 0;
+  height: 50vh;
   z-index: 10;
+  overflow: hidden;
+  -webkit-clip-path: circle(220px at 40% 40%);
+          clip-path: circle(220px at 40% 40%);
 }
-.about__img2 {
-  display: none;
-}
-.about__text {
-  position: absolute;
-  top: 120px;
-  bottom: 0;
+.about-mobile__imgContainer img {
+  position: fixed;
+  width: 90%;
   right: 0;
-  left: 0;
+  top: 0;
+  height: 100%;
+  -o-object-position: center;
+     object-position: center;
+}
+.about-mobile__text {
+  position: absolute;
   background: linear-gradient(100deg, #76b6c4, #1da2d8);
-  color: #def3f6;
-  padding: 3em;
+  z-index: 0;
+  height: 70vh;
   width: 100%;
+  top: 30vh;
 }
-.about__text--heading {
-  font-size: 2rem;
+.about-mobile__text--header {
+  margin-top: 20vh;
+  padding: 1.2em;
+  color: #def3f6;
+  font-size: 2.5rem;
   text-transform: uppercase;
-  padding-bottom: 2em;
-  padding-top: 190px;
 }
-.about__text--content {
-  font-size: 1.6rem;
-  line-height: 1.6em;
+.about-mobile__text--content {
+  padding: 2em;
+  padding-top: 0;
+  color: #def3f6;
+  font-size: 1.3rem;
+  line-height: 1.5em;
+  text-align: justify;
 }
 
 .gallery {
@@ -407,9 +309,6 @@ aside .btn-container a:hover::after aside .btn-container a:focus::after {
   flex-direction: column;
   padding: 2em;
   top: 240vh;
-}
-.contact__text {
-  font-size: 2rem;
 }
 .contact__text p {
   padding-bottom: 1em;

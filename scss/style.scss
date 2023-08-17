@@ -1,7 +1,7 @@
 @use './animations' as *;
 @use './colors' as *;
-@use './mediaQueries' as *;
 @use './components' as *;
+@use './mediaQueries' as *;
 
 
 
@@ -226,77 +226,56 @@ box-shadow: 1px 29px 39px -29px rgba(66, 68, 90, 1);
 
 }
 
+
+
 //===========================ABOUT SECTION ======================
 
-.about{
-    position: relative;
+.about-mobile{
     height: 100vh;
-    width: 100%;
-    display: flex;
-    padding: 2em;
+    position: relative;
     overflow: hidden;
-
+   &__imgContainer{
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 50vh;
+    z-index: 10;
+    overflow: hidden;
+    clip-path: circle(220px at 40% 40%);
     img{
-        width: 100%;
-        min-height: 100%;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        position: fixed;
-        object-fit: cover;
-        object-position: 13% 15%;        
-    }
-
-    &__img{
-        position: absolute;
+        position:fixed;
         width: 90%;
-        min-height: 300px;
-        clip-path: inset(0);
+        right: 0;
         top: 0;
-        right: 0;
-        z-index: 10;
+        height: 100%;
+        object-position: center;
     }
-
-    &__img2{
-        display: none;
-    }
-
-    // &__img2{
-    //     position: absolute;
-    //     width: 900px;
-    //     height: 300px;
-    //     clip-path: inset(0);
-    //     bottom: 300px;
-        
-    // }
+   }
+   &__text{
+    position: absolute;
+    background: $blueGradient;
+    z-index: 0;
+    height: 70vh;
+    width: 100%;
+    top: 30vh;
     
-
-    &__text{
-        position: absolute;
-        top: 120px;
-        bottom: 0;
-        right: 0;
-        left: 0;
-        background: $blueGradient;
+    &--header{
+        margin-top: 20vh;
+        padding: 1.2em;
         color: $firstColor;
-        padding: 3em;
-        width: 100%;
-     
-     
-
-        &--heading{
-            font-size: 2rem;
-            text-transform: uppercase;
-            padding-bottom: 2em;
-            padding-top: 190px;
-        }
-
-        &--content{
-            font-size: 1.6rem;
-            line-height: 1.6em;
-        }
+        font-size: 2.5rem;
+        text-transform: uppercase;
     }
+
+    &--content{
+        padding: 2em;
+        padding-top: 0;
+        color: $firstColor;
+        font-size: 1.3rem;
+        line-height: 1.5em;
+        text-align: justify;
+    }
+}
 }
 
 //=============== GALLERY SECTION =================
@@ -375,7 +354,7 @@ box-shadow: 1px 29px 39px -29px rgba(66, 68, 90, 1);
     top: 240vh;
 
     &__text{
-        font-size: 2rem;
+        
 
         p{ 
             padding-bottom: 1em;
@@ -386,5 +365,8 @@ box-shadow: 1px 29px 39px -29px rgba(66, 68, 90, 1);
         }
     }
 }
+
+
+
 
 
