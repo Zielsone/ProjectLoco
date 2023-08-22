@@ -242,13 +242,14 @@ box-shadow: 1px 29px 39px -29px rgba(66, 68, 90, 1);
     z-index: 10;
     overflow: hidden;
     clip-path: circle(220px at 40% 40%);
-    img{
+    &--img{
         position:fixed;
         width: 90%;
         right: 0;
         top: 0;
         height: 100%;
         object-position: center;
+        overflow: hidden;
     }
    }
    &__text{
@@ -279,92 +280,67 @@ box-shadow: 1px 29px 39px -29px rgba(66, 68, 90, 1);
 }
 
 //=============== GALLERY SECTION =================
-
-.gallery{
+.gallery-mobile{
+    height: 100vh;
     position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 2em;
-    top: 120vh;
-
-
-    &__img{
-        width: 80%;
-        height: 100vh;
-        background-image: url('../pic/IMG_6632.JPG');
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        z-index: 0;
-        margin-right: 30em;
-        margin-left: -13em;
-
-        .arrow{
-                position: absolute;
-                bottom: 50%;
-                right: 0.3em;
-                font-size: 4rem;
-                color: $firstColor;
-                background-color: $secColor;
-                border-radius: 50%;
-                padding: 0.2em;
-            }
+    overflow: hidden;
+    &__imgContainer{
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 50vh;
+    z-index: 10;
+    overflow: hidden;
+    clip-path: circle(220px at 40% 40%);
+    &--img{
+        position:fixed;
+        width: 90%;
+        right: 0;
+        top: 0;
+        height: 100%;
+        object-position: center;
+        overflow: hidden; 
     }
-
+    }
+    
     &__text{
-        background-color: $secColor;
-        width: 470px;
-        height: 470px;
         position: absolute;
-        z-index: 100;
-        top: 9%;
-        left: 55%;
-        color: #fff;
-        padding: 6em;
+        background: $blueGradient;
+        z-index: 0;
+        height: 70vh;
+        width: 100%;
+        top: 30vh;
 
-        &--heading{
-            font-size: 3rem;
-            text-transform: uppercase;
-            padding-bottom: 2em;
-        }
+            &--header{
+                margin-top: 20vh;
+                padding: 1.2em;
+                color: $firstColor;
+                font-size: 2.5rem;
+                text-transform: uppercase; 
+                padding-bottom: 0.5em;
+            }
 
-        &--content{
-            font-size: 1.6rem;
-            line-height: 1.6em;
+            &--content{
+                padding: 2em;
+                padding-top: 0;
+                color: $firstColor;
+                font-size: 1.3rem;
+                line-height: 1.5em;
+                text-align: justify;
+            }
 
             ul{
-                padding-top: 1.5em;
-                list-style: inside;
+                padding-top: 0.5em;
+                margin-left: 1.5em;
             }
-        }
-    }
-}
 
+
+
+}
+}
 
 //=============== CONTACT SECTION ================
-.contact{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 2em;
-    top: 240vh;
 
-    &__text{
-        
-
-        p{ 
-            padding-bottom: 1em;
-        }
-
-        h4{
-            padding-bottom: 2em;
-        }
-    }
-}
 
 
 

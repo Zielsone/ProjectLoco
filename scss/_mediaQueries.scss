@@ -6,6 +6,13 @@
             }
         }
     }
+    .wrapper{
+        .gallery-mobile{
+            &__imgContainer{
+                clip-path: circle(190px at 40% 40%);
+            }
+        }
+    }
 }
 
 
