@@ -45,6 +45,7 @@ background design tiktok -zapisane
             </div>
 
 
-Obrobić do końca sekcje gallery-mobile (chodzi o media querries, które jest ustalane MobileFirst) 
-Dodać sekcje contact z mapką i obrobić
+Obrobić sekcje contact na większych mobilach, dodać stopkę i zacząć robić wersję desktop
+
+
 Poustawiać mobile display:none i zając się widokiem desktopowym.

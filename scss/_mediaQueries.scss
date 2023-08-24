@@ -1,26 +1,10 @@
-@media (max-width: 373px){
-    .wrapper{
-        .about-mobile{
-            &__imgContainer{
-                clip-path: circle(190px at 40% 40%);
-            }
-        }
-    }
-    .wrapper{
-        .gallery-mobile{
-            &__imgContainer{
-                clip-path: circle(190px at 40% 40%);
-            }
-        }
-    }
-}
-
 
 @media (min-width: 374px) and (max-width: 767px){
     .wrapper{
     .about-mobile{
-        
-        
+        &__imgContainer{
+            clip-path: circle(220px at 40% 40%);
+        }
         &__text{
          &--header{
              font-size: 2.5rem;
@@ -33,5 +17,53 @@
          }
      }
      }
+
+     .gallery-mobile{
+            &__imgContainer{
+                clip-path: circle(220px at 40% 40%);
+            }
+        &__text{
+         &--header{
+             font-size: 2.5rem;
+         }
+     
+          &--content{
+                padding-left: 1.8em;
+                font-size: 1.7rem;
+                line-height: 1.5em;
+                padding-bottom: 2em;
+         }
+     }
+     }
+
+     .contact-mobile{
+        &__imgContainer{
+            clip-path: circle(220px at 40% 40%);
+        }
+
+        &__text{
+            &--content{
+                padding-top: 15em;
+
+                strong{
+                    font-size: 2.3rem;
+                }
+
+                .adres{
+                    font-size: 1.8rem;
+                }
+
+                h4{
+                    font-size: 2.3rem;
+                }
+
+                .tele{
+                    font-size: 2.3rem;
+                }
+            }
+        }
+     }
 }
+
+
 }

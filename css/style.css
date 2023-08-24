@@ -10,7 +10,7 @@
 }
 .section {
   height: 100vh;
-  margin-bottom: 10em;
+  margin-bottom: 5em;
 }
 
 .wrapper {
@@ -19,17 +19,11 @@
   max-width: 1200px;
 }
 
-@media (max-width: 373px) {
-  .wrapper .about-mobile__imgContainer {
-    -webkit-clip-path: circle(190px at 40% 40%);
-            clip-path: circle(190px at 40% 40%);
-  }
-  .wrapper .gallery-mobile__imgContainer {
-    -webkit-clip-path: circle(190px at 40% 40%);
-            clip-path: circle(190px at 40% 40%);
-  }
-}
 @media (min-width: 374px) and (max-width: 767px) {
+  .wrapper .about-mobile__imgContainer {
+    -webkit-clip-path: circle(220px at 40% 40%);
+            clip-path: circle(220px at 40% 40%);
+  }
   .wrapper .about-mobile__text--header {
     font-size: 2.5rem;
   }
@@ -37,6 +31,38 @@
     font-size: 1.7rem;
     line-height: 1.5em;
     padding-bottom: 2em;
+  }
+  .wrapper .gallery-mobile__imgContainer {
+    -webkit-clip-path: circle(220px at 40% 40%);
+            clip-path: circle(220px at 40% 40%);
+  }
+  .wrapper .gallery-mobile__text--header {
+    font-size: 2.5rem;
+  }
+  .wrapper .gallery-mobile__text--content {
+    padding-left: 1.8em;
+    font-size: 1.7rem;
+    line-height: 1.5em;
+    padding-bottom: 2em;
+  }
+  .wrapper .contact-mobile__imgContainer {
+    -webkit-clip-path: circle(220px at 40% 40%);
+            clip-path: circle(220px at 40% 40%);
+  }
+  .wrapper .contact-mobile__text--content {
+    padding-top: 15em;
+  }
+  .wrapper .contact-mobile__text--content strong {
+    font-size: 2.3rem;
+  }
+  .wrapper .contact-mobile__text--content .adres {
+    font-size: 1.8rem;
+  }
+  .wrapper .contact-mobile__text--content h4 {
+    font-size: 2.3rem;
+  }
+  .wrapper .contact-mobile__text--content .tele {
+    font-size: 2.3rem;
   }
 }
 * {
@@ -214,8 +240,8 @@ aside .btn-container a:hover::after aside .btn-container a:focus::after {
   height: 50vh;
   z-index: 10;
   overflow: hidden;
-  -webkit-clip-path: circle(220px at 40% 40%);
-          clip-path: circle(220px at 40% 40%);
+  -webkit-clip-path: circle(190px at 40% 40%);
+          clip-path: circle(190px at 40% 40%);
 }
 .about-mobile__imgContainer--img {
   position: fixed;
@@ -263,8 +289,8 @@ aside .btn-container a:hover::after aside .btn-container a:focus::after {
   height: 50vh;
   z-index: 10;
   overflow: hidden;
-  -webkit-clip-path: circle(220px at 40% 40%);
-          clip-path: circle(220px at 40% 40%);
+  -webkit-clip-path: circle(190px at 40% 40%);
+          clip-path: circle(190px at 40% 40%);
 }
 .gallery-mobile__imgContainer--img {
   position: fixed;
@@ -293,7 +319,7 @@ aside .btn-container a:hover::after aside .btn-container a:focus::after {
   padding-bottom: 0.5em;
 }
 .gallery-mobile__text--content {
-  padding: 2em;
+  padding: 2.3em;
   padding-top: 0;
   color: #def3f6;
   font-size: 1.3rem;
@@ -303,4 +329,72 @@ aside .btn-container a:hover::after aside .btn-container a:focus::after {
 .gallery-mobile__text ul {
   padding-top: 0.5em;
   margin-left: 1.5em;
+}
+
+.contact-mobile {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+.contact-mobile__imgContainer {
+  position: relative;
+  top: 0;
+  width: 100%;
+  height: 50vh;
+  z-index: 10;
+  overflow: hidden;
+  -webkit-clip-path: circle(190px at 40% 40%);
+          clip-path: circle(190px at 40% 40%);
+}
+.contact-mobile__imgContainer iframe {
+  position: fixed;
+  width: 90%;
+  right: 0;
+  top: 0;
+  height: 100%;
+  -o-object-position: center;
+     object-position: center;
+  overflow: hidden;
+}
+.contact-mobile__text {
+  position: absolute;
+  background: linear-gradient(100deg, #76b6c4, #1da2d8);
+  z-index: 0;
+  height: 70vh;
+  width: 100%;
+  top: 30vh;
+}
+.contact-mobile__text--content {
+  padding: 2.3em;
+  padding-top: 12em;
+  color: #def3f6;
+  font-size: 1.3rem;
+  line-height: 1.5em;
+  text-align: justify;
+}
+.contact-mobile__text--content strong {
+  font-size: 2rem;
+}
+.contact-mobile__text--content .adres {
+  padding-top: 2em;
+  font-size: 1.5rem;
+  padding-bottom: 2em;
+}
+.contact-mobile__text--content .adres a,
+.contact-mobile__text--content .adres a:visited {
+  color: #def3f6;
+  text-decoration: none;
+}
+.contact-mobile__text--content .adres a:hover, .contact-mobile__text--content .adres a:focus,
+.contact-mobile__text--content .adres a:visited:hover,
+.contact-mobile__text--content .adres a:visited:focus {
+  color: #7fcdff;
+  font-weight: bolder;
+}
+.contact-mobile__text--content h4 {
+  font-size: 1.8rem;
+  padding-bottom: 1em;
+}
+.contact-mobile__text--content .tele {
+  font-size: 2rem;
 }/*# sourceMappingURL=style.css.map */
