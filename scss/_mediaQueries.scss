@@ -21,6 +21,10 @@
      .gallery-mobile{
             &__imgContainer{
                 clip-path: circle(220px at 40% 40%);
+                .photoBtn{
+                    padding: 1.5em;
+                    left: 75%;
+                }
             }
         &__text{
          &--header{

@@ -301,6 +301,17 @@ box-shadow: 1px 29px 39px -29px rgba(66, 68, 90, 1);
         object-position: center;
         overflow: hidden; 
     }
+    .photoBtn{
+        padding: 1em;
+        position: absolute;
+        left: 80%;
+        top: 40%;
+        font-size: 2.2rem;
+        color: $fiveColor;
+        border-radius: 50%;
+        background-color: $fourColor;
+        cursor: pointer;
+    }
     }
     
     &__text{
@@ -333,9 +344,67 @@ box-shadow: 1px 29px 39px -29px rgba(66, 68, 90, 1);
                 padding-top: 0.5em;
                 margin-left: 1.5em;
             }
+}
 
+.showGall{
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: $blueGradient;
+    z-index: 100;
+    transform: translateX(100%);
+    transition: .5s cubic-bezier(0.65, 0.05, 0.36, 1);
+    margin-top: 15%;
 
+    &--active{
+        transform: translateX(0);
+    }
+        .mySlides{
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0,0,0, 0.8);
 
+        .arrow{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            z-index: 150;
+            font-size: 2rem;
+            color: $firstColor;
+            top: 40vh;
+            
+            padding: 0.8em;
+            background-color: $fourColor;
+            border-radius: 50%;           
+        }
+
+        .right{
+            right: 10px; 
+        }
+
+        .left{
+            left: 10px;
+            transform: translate(0%, 0) rotate(180deg);
+        }
+
+        .close{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            z-index: 150;
+            font-size: 2rem;
+            color: $firstColor;
+            top: 7vh;
+            right: 20px;
+            padding: 0.5em;
+        }
+    }
 }
 }
 
