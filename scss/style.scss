@@ -360,14 +360,7 @@ box-shadow: 1px 29px 39px -29px rgba(66, 68, 90, 1);
     transition: .5s cubic-bezier(0.65, 0.05, 0.36, 1);
     margin-top: 15%;
 
-    &--active{
-        transform: translateX(0);
-    }
-        .mySlides{
-        width: 100%;
-        height: 100vh;
-        background-color: rgba(0,0,0, 0.8);
-
+    .slideshow-container{
         .arrow{
             display: flex;
             justify-content: center;
@@ -398,12 +391,31 @@ box-shadow: 1px 29px 39px -29px rgba(66, 68, 90, 1);
             align-items: center;
             position: absolute;
             z-index: 150;
-            font-size: 2rem;
-            color: $firstColor;
+            font-size: 2.5rem;
+            color: $fiveColor;
             top: 7vh;
             right: 20px;
             padding: 0.5em;
         }
+
+        .fade {
+            animation-name: fade;
+            animation-duration: 1.5s;
+          }
+          
+          @keyframes fade {
+            from {opacity: 0.9; }
+            to {opacity: 1;}
+          }
+    }
+
+    &--active{
+        transform: translateX(0);
+    }
+        .mySlides{
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0,0,0, 0.8);
     }
 }
 }

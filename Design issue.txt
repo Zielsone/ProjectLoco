@@ -49,3 +49,5 @@ Obrobić sekcje contact na większych mobilach, dodać stopkę i zacząć robić
 
 
 Poustawiać mobile display:none i zając się widokiem desktopowym.
+
+Zmienić rozdielczość oraz format zdjęć w widoku mobilnym na mniejszą aby rozwiązać problem powolnego loadingu
