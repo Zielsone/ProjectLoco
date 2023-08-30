@@ -37,8 +37,8 @@ aside{
     justify-content: center;
     align-content: center;
     -webkit-box-shadow: 1px 29px 39px -29px rgba(66, 68, 90, 1);
--moz-box-shadow: 1px 29px 39px -29px rgba(66, 68, 90, 1);
-box-shadow: 1px 29px 39px -29px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 1px 29px 39px -29px rgba(66, 68, 90, 1);
+    box-shadow: 1px 29px 39px -29px rgba(66, 68, 90, 1);
 
     .booking-logo{
         position: relative;
@@ -162,7 +162,7 @@ box-shadow: 1px 29px 39px -29px rgba(66, 68, 90, 1);
              &,
              &::after,
              &::before{
-                 transition: transform .3s, font-weight .5s, color .5s;
+                 transition: transform .3s, color .5s;
              }
 
 

@@ -69,6 +69,35 @@
     font-size: 2.3rem;
   }
 }
+@media (min-width: 768px) and (max-width: 1920px) {
+  #sticky-navbar {
+    height: 100px;
+    gap: 15em;
+  }
+  #sticky-navbar .booking-logo {
+    top: 1px;
+    display: flex;
+  }
+  #sticky-navbar h3 {
+    display: flex;
+  }
+  .nav {
+    margin-top: 25px;
+  }
+  .nav__items a {
+    font-size: 2.3rem;
+  }
+  .header {
+    margin-top: 8em;
+  }
+  .header h1 {
+    font-size: 8rem;
+    letter-spacing: 5px;
+  }
+  .header p {
+    font-size: 2.3rem;
+  }
+}
 * {
   box-sizing: border-box;
   margin: 0;
@@ -188,7 +217,7 @@ aside .btn-container a:hover::after aside .btn-container a:focus::after {
   font-size: 1.2rem;
 }
 .nav__items--link, .nav__items--link::after, .nav__items--link::before {
-  transition: transform 0.3s, font-weight 0.5s, color 0.5s;
+  transition: transform 0.3s, color 0.5s;
 }
 .nav__items--link::after {
   content: "";
