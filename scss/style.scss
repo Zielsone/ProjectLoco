@@ -524,6 +524,58 @@ aside{
         }
 }
 
+//=============== OWNERS SECTION ================
+.owners-mobile{
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+        &__imgContainer{
+            position: relative;
+            top: 0;
+            width: 100%;
+            height: 50vh;
+            z-index: 10;
+            overflow: hidden;
+            clip-path: circle(190px at 40% 40%);
+
+            &--img{
+                position:fixed;
+                width: 90%;
+                right: 0;
+                top: 0;
+                height: 100%;
+                object-position: center;
+                overflow: hidden;
+            }
+        }
+    &__text{
+        position: absolute;
+        background: $blueGradient;
+        z-index: 0;
+        height: 70vh;
+        width: 100%;
+        top: 30vh;
+
+        &--header{
+            margin-top: 20vh;
+            padding: 1.2em;
+            color: $firstColor;
+            font-size: 2.5rem;
+            text-transform: uppercase; 
+            padding-bottom: 0.5em;
+        }
+
+        &--content{
+            padding: 2.3em;
+            padding-top: 0;
+            color: $firstColor;
+            font-size: 1.3rem;
+            line-height: 1.5em;
+            text-align: justify;
+        }
+    }
+}
+
 //=============== CONTACT SECTION ================
 .contact-mobile{
     height: 100vh;

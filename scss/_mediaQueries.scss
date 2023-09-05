@@ -1,3 +1,19 @@
+@media (min-width: 320px){
+    .about{
+        display: none;
+    }
+    #homeMX{
+        display: none;
+    }
+    .gallery{
+        display: none;
+    }
+    #galleryMX{
+        display: none;
+    } 
+}
+
+
 
 @media (min-width: 374px) and (max-width: 767px){
     .about{
@@ -7,6 +23,9 @@
         display: none;
     }
     .gallery{
+        display: none;
+    }
+    #galleryMX{
         display: none;
     }
     .wrapper{
@@ -48,6 +67,25 @@
          }
      }
      }
+
+     .owners-mobile{
+        &__imgContainer{
+            clip-path: circle(220px at 40% 40%);
+        }
+
+        &__text{
+            &--header{
+                font-size: 2.5rem;
+            }
+        
+             &--content{
+                   padding-left: 1.8em;
+                   font-size: 1.7rem;
+                   line-height: 1.5em;
+                   padding-bottom: 2em;
+            }
+     }
+    }
 
      .contact-mobile{
         &__imgContainer{
