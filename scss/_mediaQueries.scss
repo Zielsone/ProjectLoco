@@ -1,5 +1,14 @@
 
 @media (min-width: 374px) and (max-width: 767px){
+    .about{
+        display: none;
+    }
+    #homeMX{
+        display: none;
+    }
+    .gallery{
+        display: none;
+    }
     .wrapper{
     .about-mobile{
         &__imgContainer{
@@ -91,7 +100,7 @@
         &__items{
            
                 a{
-                    font-size: 2.3rem;  
+                    font-size: 2rem;  
                 }
         }
 
@@ -100,11 +109,21 @@
     .header{
         margin-top: 8em;
         h1{
-            font-size: 8rem;
-            letter-spacing: 5px;
+            font-size: 6rem;
+            letter-spacing: 3px;
         }
         p{
-            font-size: 2.3rem;
+            font-size: 2rem;
         }
     }
+
+    .about-mobile{
+        display: none;
+    }
+
+    .gallery-mobile{
+        display: none;
+    }
+
+
 }

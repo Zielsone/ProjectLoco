@@ -279,6 +279,54 @@ aside{
 }
 }
 
+.about{
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+
+    &__imgContainer{
+        position: relative;
+        top: 0;
+        width: 90%;
+        height: 90vh;
+        z-index: 10;
+        padding: 5em;
+        
+        &--img{
+         width: 100%;
+         height: 100%;
+         border-radius: 8px;  
+        }
+    }
+
+    &__text{
+        position: absolute;
+        top: 20%;
+        right: 5%;
+        width: 400px;
+        height: 400px;
+        z-index: 100;
+        border-radius: 8px;
+        background: $blueGradient;
+
+            &--header{
+                color: $firstColor;
+                padding: 1.5em;
+                text-align: center;
+                font-size: 2.3rem;
+                text-transform: uppercase;
+            }
+
+            &--content{
+                color: $firstColor;
+                padding: 2em;
+                font-size: 1.7rem;
+                line-height: 1.3em;
+            }
+    }
+}
+
 //=============== GALLERY SECTION =================
 .gallery-mobile{
     height: 100vh;
@@ -346,19 +394,19 @@ aside{
             }
 }
 
-.showGall{
-    position: fixed;
-    top: 0;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    background-color: $blueGradient;
-    z-index: 100;
-    transform: translateX(100%);
-    transition: .5s cubic-bezier(0.65, 0.05, 0.36, 1);
-    margin-top: 15%;
+    .showGall{
+        position: fixed;
+        top: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        background-color: $blueGradient;
+        z-index: 100;
+        transform: translateX(100%);
+        transition: .5s cubic-bezier(0.65, 0.05, 0.36, 1);
+        margin-top: 15%;
 
     .slideshow-container{
         .arrow{
@@ -418,6 +466,62 @@ aside{
         background-color: rgba(0,0,0, 0.8);
     }
 }
+}
+
+.gallery{
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+        &__imgContainer{
+            position: relative;
+            margin: 0;
+            top: 0;
+            left: 71px;
+            width: 90%;
+            height: 90vh;
+            z-index: 10;
+            padding: 5em;
+
+            &--img{
+                width: 100%;
+                height: 100%;
+                border-radius: 8px;
+            }
+        }
+
+        &__text{
+            position: absolute;
+            top: 20%;
+            left: 5%;
+            width: 400px;
+            height: 400px;
+            z-index: 100;
+            border-radius: 8px;
+            background: $blueGradient;
+            color: $firstColor;
+            
+                &--header{
+                    color: $firstColor;
+                    padding: 1.5em;
+                    text-align: center;
+                    font-size: 2.3rem;
+                    text-transform: uppercase;
+                }
+
+                &--content{
+                    color: $firstColor;
+                    padding: 2em;
+                    font-size: 1.7rem;
+                    line-height: 1.3em;
+
+                    ul{
+                        padding-left: 1em;
+                    }
+                }
+
+
+        }
 }
 
 //=============== CONTACT SECTION ================
