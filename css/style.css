@@ -19,7 +19,7 @@
   max-width: 1200px;
 }
 
-@media (min-width: 320px) {
+@media (min-width: 320px) and (max-width: 373px) {
   .about {
     display: none;
   }
@@ -30,6 +30,12 @@
     display: none;
   }
   #galleryMX {
+    display: none;
+  }
+  .owners {
+    display: none;
+  }
+  #ownersMX {
     display: none;
   }
 }
@@ -44,6 +50,12 @@
     display: none;
   }
   #galleryMX {
+    display: none;
+  }
+  .owners {
+    display: none;
+  }
+  #ownersMX {
     display: none;
   }
   .wrapper .about-mobile__imgContainer {
@@ -140,6 +152,9 @@
     display: none;
   }
   .gallery-mobile {
+    display: none;
+  }
+  .owners-mobile {
     display: none;
   }
 }
@@ -552,7 +567,7 @@ aside .btn-container a:hover::after aside .btn-container a:focus::after {
 }
 .gallery__text {
   position: absolute;
-  top: 20%;
+  top: 15%;
   left: 5%;
   width: 400px;
   height: 400px;
@@ -564,6 +579,7 @@ aside .btn-container a:hover::after aside .btn-container a:focus::after {
 .gallery__text--header {
   color: #def3f6;
   padding: 1.5em;
+  padding-bottom: 0.5em;
   text-align: center;
   font-size: 2.3rem;
   text-transform: uppercase;
@@ -626,6 +642,53 @@ aside .btn-container a:hover::after aside .btn-container a:focus::after {
   font-size: 1.3rem;
   line-height: 1.5em;
   text-align: justify;
+}
+
+.owners {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.owners__imgContainer {
+  position: relative;
+  top: 5%;
+  width: 90%;
+  height: 90vh;
+  z-index: 10;
+  padding: 5em;
+  left: 0;
+  right: 0;
+}
+.owners__imgContainer--img {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+.owners__text {
+  position: absolute;
+  top: 0%;
+  left: 5%;
+  width: 400px;
+  height: 400px;
+  z-index: 100;
+  border-radius: 8px;
+  background: linear-gradient(100deg, #76b6c4, #1da2d8);
+}
+.owners__text--header {
+  color: #def3f6;
+  padding: 1.5em;
+  text-align: center;
+  font-size: 2.3rem;
+  text-transform: uppercase;
+}
+.owners__text--content {
+  color: #def3f6;
+  padding: 2em;
+  font-size: 1.7rem;
+  line-height: 1.3em;
 }
 
 .contact-mobile {

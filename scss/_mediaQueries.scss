@@ -1,4 +1,4 @@
-@media (min-width: 320px){
+@media (min-width: 320px) and (max-width: 373px){
     .about{
         display: none;
     }
@@ -9,6 +9,12 @@
         display: none;
     }
     #galleryMX{
+        display: none;
+    }
+    .owners{
+        display: none;
+    }
+    #ownersMX{
         display: none;
     } 
 }
@@ -26,6 +32,12 @@
         display: none;
     }
     #galleryMX{
+        display: none;
+    }
+    .owners{
+        display: none;
+    }
+    #ownersMX{
         display: none;
     }
     .wrapper{
@@ -160,6 +172,9 @@
     }
 
     .gallery-mobile{
+        display: none;
+    }
+    .owners-mobile{
         display: none;
     }
 
