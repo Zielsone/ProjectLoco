@@ -38,6 +38,12 @@
   #ownersMX {
     display: none;
   }
+  .contact {
+    display: none;
+  }
+  #contactMX {
+    display: none;
+  }
 }
 @media (min-width: 374px) and (max-width: 767px) {
   .about {
@@ -56,6 +62,12 @@
     display: none;
   }
   #ownersMX {
+    display: none;
+  }
+  .contact {
+    display: none;
+  }
+  #contactMX {
     display: none;
   }
   .wrapper .about-mobile__imgContainer {
@@ -119,8 +131,11 @@
   .wrapper .contact-mobile__text--content .tele {
     font-size: 2.3rem;
   }
+  section .footer__text {
+    font-size: 2.5rem;
+  }
 }
-@media (min-width: 768px) and (max-width: 1920px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   #sticky-navbar {
     height: 100px;
     gap: 15em;
@@ -156,6 +171,12 @@
   }
   .owners-mobile {
     display: none;
+  }
+  .contact-mobile {
+    display: none;
+  }
+  section .footer__text {
+    font-size: 2.5rem;
   }
 }
 * {
@@ -695,6 +716,8 @@ aside .btn-container a:hover::after aside .btn-container a:focus::after {
   height: 100vh;
   position: relative;
   overflow: hidden;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
 }
 .contact-mobile__imgContainer {
   position: relative;
@@ -757,4 +780,66 @@ aside .btn-container a:hover::after aside .btn-container a:focus::after {
 }
 .contact-mobile__text--content .tele {
   font-size: 2rem;
+}
+
+.contact {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+.contact__imgContainer {
+  position: relative;
+  margin: 0;
+  top: 0;
+  left: 71px;
+  width: 90%;
+  height: 90vh;
+  z-index: 10;
+  padding: 5em;
+}
+.contact iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+.contact__text {
+  position: absolute;
+  top: 55%;
+  left: 5%;
+  width: 400px;
+  height: 400px;
+  z-index: 100;
+  border-radius: 8px;
+  background: linear-gradient(100deg, #76b6c4, #1da2d8);
+  color: #def3f6;
+  text-align: center;
+}
+.contact__text--content {
+  margin-top: 15px;
+  color: #def3f6;
+  padding: 3em;
+  font-size: 1.7rem;
+  line-height: 1.3em;
+}
+
+.footer {
+  height: 8vh;
+  width: 100%;
+  background-color: #064273;
+  color: #def3f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer__text {
+  font-size: 1.8rem;
+  text-align: center;
+}
+.footer__text a {
+  color: #1da2d8;
+  text-decoration: none;
+  transition: color 1s;
+}
+.footer__text a:hover {
+  color: #def3f6;
 }/*# sourceMappingURL=style.css.map */

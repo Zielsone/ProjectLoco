@@ -639,6 +639,8 @@ aside{
     height: 100vh;
     position: relative;
     overflow: hidden;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
     
     &__imgContainer{
         position: relative;
@@ -710,6 +712,74 @@ aside{
 
 
 }
+}
+
+.contact{
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+        &__imgContainer{
+            position: relative;
+            margin: 0;
+            top: 0;
+            left: 71px;
+            width: 90%;
+            height: 90vh;
+            z-index: 10;
+            padding: 5em;
+        }
+
+        iframe{
+            width: 100%;
+            height: 100%;
+            border-radius: 8px;
+        }
+
+    &__text{
+        position: absolute;
+        top: 55%;
+        left: 5%;
+        width: 400px;
+        height: 400px;
+        z-index: 100;
+        border-radius: 8px;
+        background: $blueGradient;
+        color: $firstColor;
+        text-align: center;
+            &--content{
+                margin-top: 15px;
+                color: $firstColor;
+                padding: 3em;
+                font-size: 1.7rem;
+                line-height: 1.3em;
+            }
+    }
+}
+
+.footer{
+    height: 8vh;
+    width: 100%;
+    background-color: $fiveColor;
+    color: $firstColor;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+        &__text{
+            font-size: 1.8rem;
+            text-align: center;
+
+            a{
+                color: $secColor;
+                text-decoration: none;
+                transition: color 1s;
+
+                &:hover{
+                    color: $firstColor;
+                }
+            }
+
+        }
 }
 
 

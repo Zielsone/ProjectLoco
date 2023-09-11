@@ -16,6 +16,12 @@
     }
     #ownersMX{
         display: none;
+    }
+    .contact{
+        display: none;
+    }
+    #contactMX{
+        display: none;
     } 
 }
 
@@ -38,6 +44,12 @@
         display: none;
     }
     #ownersMX{
+        display: none;
+    }
+    .contact{
+        display: none;
+    }
+    #contactMX{
         display: none;
     }
     .wrapper{
@@ -127,9 +139,15 @@
         }
      }
 }
+section{
+    .footer{
+    &__text{
+        font-size: 2.5rem;
+    }
+}}
 }
 
-@media (min-width: 768px) and (max-width: 1920px){
+@media (min-width: 768px) and (max-width: 1024px){
     #sticky-navbar{
         height: 100px;
         gap: 15em;
@@ -177,6 +195,16 @@
     .owners-mobile{
         display: none;
     }
+    .contact-mobile{
+        display: none;
+    }
+    section{
+    .footer{
+        &__text{
+            font-size: 2.5rem;
+        }
+    }
+}
 
 
 }
