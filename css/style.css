@@ -179,6 +179,92 @@
     font-size: 2.5rem;
   }
 }
+@media (min-width: 1025px) and (max-width: 1920px) {
+  .about-mobile {
+    display: none;
+  }
+  .gallery-mobile {
+    display: none;
+  }
+  .owners-mobile {
+    display: none;
+  }
+  .contact-mobile {
+    display: none;
+  }
+  section .footer__text {
+    font-size: 2.5rem;
+  }
+  #sticky-navbar {
+    height: 100px;
+    gap: 15em;
+    display: flex;
+    justify-content: space-around;
+  }
+  #sticky-navbar .booking-logo {
+    top: 1px;
+    display: flex;
+  }
+  #sticky-navbar h3 {
+    display: flex;
+  }
+  .nav {
+    margin-top: 25px;
+  }
+  .nav__items a {
+    font-size: 2rem;
+  }
+  .header {
+    margin-top: 8em;
+  }
+  .header h1 {
+    font-size: 10rem;
+    letter-spacing: 3px;
+  }
+  .header p {
+    font-size: 2rem;
+  }
+  .wrapper {
+    margin-left: 150px;
+  }
+  .wrapper .about__imgContainer {
+    left: 0px;
+    width: 100%;
+    height: 100%;
+  }
+  .wrapper .about__text {
+    width: 450px;
+    height: 450px;
+    right: 20%;
+  }
+  .wrapper .about__text--header {
+    font-size: 3rem;
+  }
+  .wrapper .about__text--content {
+    padding-top: 1em;
+    font-size: 1.8rem;
+    line-height: 1.5em;
+  }
+  .wrapper .gallery__imgContainer {
+    left: 35%;
+    width: 100%;
+    height: 100%;
+  }
+  .wrapper .gallery__text {
+    width: 450px;
+    height: 450px;
+    left: 20%;
+  }
+  .wrapper .gallery__text--header {
+    font-size: 3rem;
+    padding-top: 1.3em;
+  }
+  .wrapper .gallery__text--content {
+    padding-top: 1em;
+    font-size: 1.8rem;
+    line-height: 1.5em;
+  }
+}
 * {
   box-sizing: border-box;
   margin: 0;
