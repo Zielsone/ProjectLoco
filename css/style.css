@@ -264,6 +264,70 @@
     font-size: 1.8rem;
     line-height: 1.5em;
   }
+  section .owners__imgContainer {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    width: 600px;
+    height: 750px;
+    z-index: 100;
+  }
+  section .owners__text {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 60vh;
+    z-index: 0;
+  }
+  section .owners__text--wrapper {
+    width: 600px;
+    height: 600px;
+    padding: 2.5em;
+    margin-left: 15%;
+  }
+  section .owners__text--wrapper .owners__text--header {
+    font-size: 3rem;
+  }
+  section .owners__text--wrapper .owners__text--content {
+    font-size: 1.8rem;
+    line-height: 1.5em;
+  }
+  section .contact__imgContainer {
+    width: 900px;
+    height: 900px;
+    margin-left: 60px;
+  }
+  section .contact__text {
+    width: 450px;
+    height: 450px;
+    left: 53%;
+    top: 25%;
+  }
+  section .contact__text--content {
+    font-size: 1.8rem;
+  }
+  section .contact__text .tele {
+    font-size: 2.5rem;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1425px) {
+  section .owners__imgContainer {
+    width: 450px;
+    height: 600px;
+    left: 65%;
+  }
+  section .contact__imgContainer {
+    margin-left: -200px;
+  }
+  section .contact__text {
+    width: 350px;
+    height: 350px;
+    left: 63%;
+  }
+  section .contact__text--content {
+    margin-top: 0px;
+  }
 }
 * {
   box-sizing: border-box;
@@ -906,6 +970,15 @@ aside .btn-container a:hover::after aside .btn-container a:focus::after {
   padding: 3em;
   font-size: 1.7rem;
   line-height: 1.3em;
+}
+.contact__text--content .adres {
+  transition: color 1s;
+}
+.contact__text--content .adres a {
+  color: #def3f6;
+}
+.contact__text--content .adres a:visited {
+  color: #def3f6;
 }
 
 .footer {
