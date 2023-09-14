@@ -29,5 +29,18 @@
         0% 100%
     );
 }
+}
 
+@keyframes fade {
+    from {opacity: 0.9; }
+    to {opacity: 1;}
+  }
+
+@keyframes bouncy-button{
+    from{
+        padding: 1.7em;
+    }
+    to{
+        padding: 2.2em;
+    }
 }

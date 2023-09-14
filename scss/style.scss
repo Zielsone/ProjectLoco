@@ -450,11 +450,6 @@ aside{
             animation-name: fade;
             animation-duration: 1.5s;
           }
-          
-          @keyframes fade {
-            from {opacity: 0.9; }
-            to {opacity: 1;}
-          }
     }
 
     &--active{
@@ -482,11 +477,34 @@ aside{
             height: 90vh;
             z-index: 10;
             padding: 5em;
+            padding-right: 0px;
+            overflow: hidden;
 
             &--img{
                 width: 100%;
                 height: 100%;
                 border-radius: 8px;
+            }
+
+            i{
+                position: absolute;
+                top: 60%;
+                right: -2%;
+                padding: 2em;
+                background-color: $fourColor;
+                color: $firstColor;
+                border-radius: 50%;
+                font-size: 3rem;
+                cursor: pointer;
+                transition: all 0.5s;
+                z-index: 0;
+                animation: bouncy-button 3s infinite alternate;
+
+                &:hover{
+                    color: $fiveColor;
+                    background-color: $firstColor;
+                    font-size: 3.2rem;
+                }
             }
         }
 

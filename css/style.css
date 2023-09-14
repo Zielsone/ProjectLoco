@@ -8,6 +8,22 @@
             clip-path: polygon(0% 60%, 15% 65%, 34% 66%, 51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%);
   }
 }
+@keyframes fade {
+  from {
+    opacity: 0.9;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes bouncy-button {
+  from {
+    padding: 1.7em;
+  }
+  to {
+    padding: 2.2em;
+  }
+}
 .section {
   height: 100vh;
   margin-bottom: 5em;
@@ -698,14 +714,6 @@ aside .btn-container a:hover::after aside .btn-container a:focus::after {
   animation-name: fade;
   animation-duration: 1.5s;
 }
-@keyframes fade {
-  from {
-    opacity: 0.9;
-  }
-  to {
-    opacity: 1;
-  }
-}
 .gallery-mobile .showGall--active {
   transform: translateX(0);
 }
@@ -730,11 +738,32 @@ aside .btn-container a:hover::after aside .btn-container a:focus::after {
   height: 90vh;
   z-index: 10;
   padding: 5em;
+  padding-right: 0px;
+  overflow: hidden;
 }
 .gallery__imgContainer--img {
   width: 100%;
   height: 100%;
   border-radius: 8px;
+}
+.gallery__imgContainer i {
+  position: absolute;
+  top: 60%;
+  right: -2%;
+  padding: 2em;
+  background-color: #76b6c4;
+  color: #def3f6;
+  border-radius: 50%;
+  font-size: 3rem;
+  cursor: pointer;
+  transition: all 0.5s;
+  z-index: 0;
+  animation: bouncy-button 3s infinite alternate;
+}
+.gallery__imgContainer i:hover {
+  color: #064273;
+  background-color: #def3f6;
+  font-size: 3.2rem;
 }
 .gallery__text {
   position: absolute;

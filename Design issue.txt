@@ -45,11 +45,11 @@ background design tiktok -zapisane
             </div>
 
 
-Obrobić sekcje contact na większych mobilach, dodać stopkę i zacząć robić wersję desktop
+1. W widoku desktopowym zmienić JSem kotwice w nawigacji strony (ID) na te z MX.
+2. Dodać galerie zdjęć do widoku desktop.
+3. Dodać opis do sekcji owners.
+4. Dodać zmiane treści strony na język angielski.
 
 
-Poustawiać mobile display:none i zając się widokiem desktopowym.
 
-Zmienić rozdielczość oraz format zdjęć w widoku mobilnym na mniejszą aby rozwiązać problem powolnego loadingu
 
-Dodać baiłe półkola do tła sekcji na mobilce.
