@@ -758,12 +758,13 @@ aside .btn-container a:hover::after aside .btn-container a:focus::after {
   cursor: pointer;
   transition: all 0.5s;
   z-index: 0;
-  animation: bouncy-button 3s infinite alternate;
+  animation: bouncy-button 1.5s infinite alternate;
 }
 .gallery__imgContainer i:hover {
   color: #064273;
   background-color: #def3f6;
   font-size: 3.2rem;
+  animation: none;
 }
 .gallery__text {
   position: absolute;
@@ -792,6 +793,74 @@ aside .btn-container a:hover::after aside .btn-container a:focus::after {
 }
 .gallery__text--content ul {
   padding-left: 1em;
+}
+.gallery .showGallMX {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 900;
+  transform: translateX(100%);
+  transition: 0.5s cubic-bezier(0.65, 0.05, 0.36, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gallery .showGallMX .slideshow-container .arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 150;
+  font-size: 2rem;
+  color: #def3f6;
+  top: 40vh;
+  padding: 0.8em;
+  background-color: #76b6c4;
+  border-radius: 50%;
+}
+.gallery .showGallMX .slideshow-container .right {
+  right: 100px;
+}
+.gallery .showGallMX .slideshow-container .left {
+  left: 100px;
+  transform: translate(0%, 0) rotate(180deg);
+}
+.gallery .showGallMX .slideshow-container .closeMX {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  font-size: 5rem;
+  color: #def3f6;
+  top: 7vh;
+  right: 120px;
+  padding: 0.5em;
+  transition: all 1s;
+}
+.gallery .showGallMX .slideshow-container .closeMX:hover {
+  transform: scale(1.2);
+  color: #76b6c4;
+}
+.gallery .showGallMX .slideshow-container .fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+.gallery .showGallMX .slideshow-container .mySlides {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.gallery .showGallMX .slideshow-container .mySlides .slide {
+  height: 100%;
+  width: 100%;
+}
+.gallery .showGallMX--active {
+  transform: translateX(0%);
 }
 
 .owners-mobile {

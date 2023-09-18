@@ -498,12 +498,13 @@ aside{
                 cursor: pointer;
                 transition: all 0.5s;
                 z-index: 0;
-                animation: bouncy-button 3s infinite alternate;
+                animation: bouncy-button 1.5s infinite alternate;
 
                 &:hover{
                     color: $fiveColor;
                     background-color: $firstColor;
                     font-size: 3.2rem;
+                    animation: none;
                 }
             }
         }
@@ -538,10 +539,95 @@ aside{
                         padding-left: 1em;
                     }
                 }
+                }
 
+        .showGallMX{
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            height: 100vh;
+            background-color: rgba(0,0,0, 0.8);
+            z-index: 900;
+            transform: translateX(100%);
+            transition: .5s cubic-bezier(0.65, 0.05, 0.36, 1);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           
+
+            .slideshow-container{
+                
+                .arrow{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    position: absolute;
+                    z-index: 150;
+                    font-size: 2rem;
+                    color: $firstColor;
+                    top: 40vh;
+                    
+                    padding: 0.8em;
+                    background-color: $fourColor;
+                    border-radius: 50%;           
+                }
+        
+                .right{
+                    right: 100px; 
+                }
+        
+                .left{
+                    left: 100px;
+                    transform: translate(0%, 0) rotate(180deg);
+                }
+        
+                .closeMX{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    position: absolute;
+                    font-size: 5rem;
+                    color: $firstColor;
+                    top: 7vh;
+                    right: 120px;
+                    padding: 0.5em;
+                    transition: all 1s;
+
+                    &:hover{
+                        transform: scale(1.2);
+                        color: $fourColor;
+                    }
+                }
+        
+                .fade {
+                    animation-name: fade;
+                    animation-duration: 1.5s;
+                  }
+               
+                
+
+                .mySlides{
+                    display: flex;
+                    width: 100%;
+                    height: 100vh;
+                    background-color: rgba(0,0,0, 0.8);
+                    .slide{
+                        height: 100%;
+                        width: 100%;
+                    }
+                }
+                
+            }
+
+            &--active{
+                transform: translateX(0%);
+            }
+        }
 
         }
-}
+
 
 //=============== OWNERS SECTION ================
 .owners-mobile{
