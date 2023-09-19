@@ -574,11 +574,11 @@ aside{
                     border-radius: 50%;           
                 }
         
-                .right{
+                .rightMX{
                     right: 100px; 
                 }
         
-                .left{
+                .leftMX{
                     left: 100px;
                     transform: translate(0%, 0) rotate(180deg);
                 }
@@ -608,8 +608,7 @@ aside{
                
                 
 
-                .mySlides{
-                    display: flex;
+                .mySlidesMX{
                     width: 100%;
                     height: 100vh;
                     background-color: rgba(0,0,0, 0.8);
