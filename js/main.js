@@ -4,11 +4,12 @@ const gallBtn = document.querySelector('.photoBtn');
 const gallBtnMX = document.querySelector('.photoBtnMX');
 const closeGall = document.querySelector('.close');
 const closeGallMX = document.querySelector('.closeMX');
-const nextPic = document.querySelector('.right')
-const nextPicMX = document.querySelector('rightMX')
-let slides = document.getElementsByClassName('mySlides')
-let slidesMX = document.getElementsByClassName('mySlidesMX')
+const nextPic = document.querySelector('.right');
+const nextPicMX = document.querySelector('rightMX');
+let slides = document.getElementsByClassName('mySlides');
+let slidesMX = document.getElementsByClassName('mySlidesMX');
 const gallSection = document.querySelector('.gallery-mobile');
+
 
 
 
@@ -47,21 +48,21 @@ let slideIndexMX = 1;
 
 const plusSlidesMX = (n) => {
     showSlidesMX(slideIndexMX += n)
+    
 }
 
 const showSlidesMX = (n) => {
     let i;
 
-    if(n > slidesMX.length) {slideIndexMX = 1}
-    if(n < 1) {slideIndexMX = slidesMX.lenght}
+    if(n > slidesMX.length) {slideIndexMX =1}
+    if(n < 1) {slideIndexMX = slidesMX.length}
 
-    for( i=0; i< slidesMX.length; i++) {
+    for (i=0; i< slidesMX.length; i++) {
         slidesMX[i].style.display = "none";
     }
 
     slidesMX[slideIndexMX-1].style.display = "block";
 }
-
 
 gallBtn.addEventListener('click', handleGall)
 closeGall.addEventListener('click', handleGall)

@@ -539,7 +539,7 @@ aside{
                         padding-left: 1em;
                     }
                 }
-                }
+            }
 
         .showGallMX{
             position: fixed;
@@ -565,13 +565,19 @@ aside{
                     align-items: center;
                     position: absolute;
                     z-index: 150;
-                    font-size: 2rem;
+                    font-size: 3rem;
                     color: $firstColor;
                     top: 40vh;
-                    
                     padding: 0.8em;
                     background-color: $fourColor;
-                    border-radius: 50%;           
+                    border-radius: 50%;
+                    transition: color 1s;
+                    
+                     &:hover{
+                         animation: galAn 1.5s infinite alternate;
+                         color: $fourColor;
+                         background-color: $firstColor;
+                     }
                 }
         
                 .rightMX{

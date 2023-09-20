@@ -24,6 +24,17 @@
     padding: 2.2em;
   }
 }
+@keyframes galAn {
+  0% {
+    font-size: 3rem;
+  }
+  50% {
+    font-size: 3.2rem;
+  }
+  100% {
+    font-size: 3rem;
+  }
+}
 .section {
   height: 100vh;
   margin-bottom: 5em;
@@ -815,12 +826,18 @@ aside .btn-container a:hover::after aside .btn-container a:focus::after {
   align-items: center;
   position: absolute;
   z-index: 150;
-  font-size: 2rem;
+  font-size: 3rem;
   color: #def3f6;
   top: 40vh;
   padding: 0.8em;
   background-color: #76b6c4;
   border-radius: 50%;
+  transition: color 1s;
+}
+.gallery .showGallMX .slideshow-container .arrow:hover {
+  animation: galAn 1.5s infinite alternate;
+  color: #76b6c4;
+  background-color: #def3f6;
 }
 .gallery .showGallMX .slideshow-container .rightMX {
   right: 100px;
