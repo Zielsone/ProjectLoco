@@ -9,8 +9,8 @@ const nextPicMX = document.querySelector('rightMX');
 let slides = document.getElementsByClassName('mySlides');
 let slidesMX = document.getElementsByClassName('mySlidesMX');
 const gallSection = document.querySelector('.gallery-mobile');
-const arrowR = document.querySelector('.rightMX');
-const arrowL = document.querySelector('.leftMX');
+
+const navLink = document.querySelectorAll('.nav__items--link');
 
 
 
@@ -66,9 +66,29 @@ const showSlidesMX = (n) => {
     slidesMX[slideIndexMX-1].style.display = "block";
 }
 
-const arrAc = () => {
-    arrowR.classList.add('arrow-active')
+const IDswitch = () => {
+    console.log(`Szerokość ekranu to ${window.innerWidth}`);
+
+    if(window.innerWidth >= 768){
+
+    
+        
+        navLink[0].href = '#homeMX';
+        navLink[1].href = '#galleryMX';
+        navLink[2].href = '#ownersMX'
+        navLink[3].href = '#contactMX';
+
+       
+    }
+    else{
+        console.log('false');
+        false;
+    }
 }
+
+IDswitch();
+
+
 
 
 gallBtn.addEventListener('click', handleGall)
@@ -78,6 +98,7 @@ nextPic.addEventListener('click', showSlides)
 gallBtnMX.addEventListener('click', handleGall)
 closeGallMX.addEventListener('click', handleGall)
 nextPicMX.addEventListener('click', showSlidesMX)
+
 
 
 
