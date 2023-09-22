@@ -28,11 +28,8 @@
   0% {
     font-size: 3rem;
   }
-  50% {
+  15% {
     font-size: 3.2rem;
-  }
-  100% {
-    font-size: 3rem;
   }
 }
 .section {
@@ -835,9 +832,12 @@ aside .btn-container a:hover::after aside .btn-container a:focus::after {
   transition: color 1s;
 }
 .gallery .showGallMX .slideshow-container .arrow:hover {
-  animation: galAn 1.5s infinite alternate;
   color: #76b6c4;
   background-color: #def3f6;
+  box-shadow: 2px 2px 10px #def3f6;
+}
+.gallery .showGallMX .slideshow-container .arrow:active {
+  animation: galAn ease-in 1s;
 }
 .gallery .showGallMX .slideshow-container .rightMX {
   right: 100px;

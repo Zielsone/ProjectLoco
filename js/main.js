@@ -9,6 +9,8 @@ const nextPicMX = document.querySelector('rightMX');
 let slides = document.getElementsByClassName('mySlides');
 let slidesMX = document.getElementsByClassName('mySlidesMX');
 const gallSection = document.querySelector('.gallery-mobile');
+const arrowR = document.querySelector('.rightMX');
+const arrowL = document.querySelector('.leftMX');
 
 
 
@@ -64,6 +66,11 @@ const showSlidesMX = (n) => {
     slidesMX[slideIndexMX-1].style.display = "block";
 }
 
+const arrAc = () => {
+    arrowR.classList.add('arrow-active')
+}
+
+
 gallBtn.addEventListener('click', handleGall)
 closeGall.addEventListener('click', handleGall)
 nextPic.addEventListener('click', showSlides)
@@ -71,6 +78,14 @@ nextPic.addEventListener('click', showSlides)
 gallBtnMX.addEventListener('click', handleGall)
 closeGallMX.addEventListener('click', handleGall)
 nextPicMX.addEventListener('click', showSlidesMX)
+
+
+
+
+
+
+
+
 
 
 

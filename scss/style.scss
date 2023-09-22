@@ -572,14 +572,21 @@ aside{
                     background-color: $fourColor;
                     border-radius: 50%;
                     transition: color 1s;
+
                     
                      &:hover{
-                         animation: galAn 1.5s infinite alternate;
                          color: $fourColor;
                          background-color: $firstColor;
+                         box-shadow: 2px 2px 10px $firstColor;
+                     }
+
+                     &:active{
+                        animation: galAn ease-in 1s;
                      }
                 }
-        
+
+                
+
                 .rightMX{
                     right: 100px; 
                 }

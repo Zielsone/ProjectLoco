@@ -46,7 +46,7 @@ background design tiktok -zapisane
 
 
 1. W widoku desktopowym zmienić JSem kotwice w nawigacji strony (ID) na te z MX.
-2. Dodać galerie zdjęć do widoku desktop.
+2. Dodać galerie zdjęć do widoku desktop. DONE
 3. Dodać opis do sekcji owners.
 4. Dodać zmiane treści strony na język angielski.
 
