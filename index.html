@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/1eb19ae372.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -60,7 +61,7 @@
                 <img class="about__imgContainer--img" src="pic/IMG_6645.JPG" alt="Słoik z muszelkami">
             </div>
 
-            <div class="about__text">
+            <div data-aos="fade-left" class="about__text">
                 <h3 class="about__text--header">Twoje prywatne miejsce w Sopocie.</h3>
 
                 <p class="about__text--content">Odnajdź spokój i odpocznij. Wizyta w apartamencie Loco to gwarancja udanych wakacji. Apartament położony jest w samym sercu Sopotu na tzw. "Monciaku". Niezeleżnie od tego czy wolisz relaks na plaży, czy aktywny wypoczynek na pewno znajdziesz tu wszystko, czego potrzebujesz. Zapoznaj się z naszą ofertą i zaplanuj pobyt już dziś.</p>
@@ -187,7 +188,7 @@
                     <i class="fa-solid fa-camera photoBtnMX"></i>
                 </div>
 
-                <div class="gallery__text">
+                <div data-aos="fade-right" class="gallery__text">
                     <h3 class="gallery__text--header">Apartament Loco.</h3>
 
                     <div class="gallery__text--content">
@@ -223,7 +224,7 @@
 
        <section class="section owners" id="ownersMX">
         <div class="wrapper">
-            <div class="owners__imgContainer">
+            <div data-aos="fade-left" class="owners__imgContainer">
                 <img src="pic/owners.jpg" alt="Marcel i Natalia" class="owners__imgContainer--img">
             </div>
 
@@ -260,7 +261,7 @@
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d580.0210403463796!2d18.562570869676623!3d54.44380117814334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46fd0a9037ab19c7%3A0x6a60e857cfc37404!2sBohater%C3%B3w%20Monte%20Cassino%2029%2F3%2C%2081-767%20Sopot!5e0!3m2!1spl!2spl!4v1691410131757!5m2!1spl!2spl" width="280" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
 
-            <div class="contact__text">
+            <div data-aos="fade-left" class="contact__text">
                 <div class="contact__text--content">
                     <strong>Apartament Loco znajduję się w Sopocie przy głównym bulwarze miasta.</strong>
 
@@ -285,5 +286,9 @@
 
     
 <script src="js/main.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 </body>
 </html>
