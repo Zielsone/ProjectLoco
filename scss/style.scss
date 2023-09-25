@@ -468,11 +468,14 @@ aside{
     position: relative;
     overflow: hidden;
     display: flex;
+        .wrapper{
+            margin: 0 auto;
+            margin-right: 150px;
+        }
         &__imgContainer{
             position: relative;
-            margin: 0;
             top: 0;
-            left: 71px;
+            right: 0px;
             width: 90%;
             height: 90vh;
             z-index: 10;
