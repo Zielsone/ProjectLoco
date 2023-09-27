@@ -44,6 +44,20 @@
   max-width: 1200px;
 }
 
+@media (min-width: 0px) and (max-width: 766px) {
+  #langBar {
+    position: absolute;
+    top: 120px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1920px) {
+  #langBar form {
+    margin-right: 25px;
+  }
+  #langBar form select {
+    font-size: 1.5rem;
+  }
+}
 @media (min-width: 320px) and (max-width: 373px) {
   .about {
     display: none;
@@ -493,6 +507,26 @@ aside .btn-container a:hover::after aside .btn-container a:focus::after {
 .nav__items--link:hover {
   font-weight: 900;
   color: #1da2d8;
+}
+
+.langBar {
+  position: absolute;
+  width: 100%;
+  height: 5%;
+  top: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.langBar form {
+  margin-right: 10px;
+}
+.langBar form select {
+  font-size: 1.2rem;
+  color: #7fcdff;
+  border: 3px solid #1da2d8;
+  border-radius: 8px;
+  padding: 0.3em;
 }
 
 .header {

@@ -91,6 +91,10 @@ IDswitch();
 
 
 
+
+
+
+
 gallBtn.addEventListener('click', handleGall)
 closeGall.addEventListener('click', handleGall)
 nextPic.addEventListener('click', showSlides)
