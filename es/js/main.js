@@ -15,6 +15,9 @@ const navLink = document.querySelectorAll('.nav__items--link');
 
 
 
+
+
+
 let slideIndex = 1; 
 
 const handleGall = () => {
@@ -86,10 +89,33 @@ const IDswitch = () => {
     }
 }
 
+
+
+const langChanger = (e) => {
+
+    
+     switch(e.target.value) {
+         case 'EN':
+             location.replace(`/en/index.html`);
+             break;
+         case 'ES' :
+             location.replace(`/es/index.html`);
+             break;
+         case 'PL' :
+             location.replace(`/pl/index.html`);
+     }
+
+    }
+
+
+const select = document.querySelector('#langList').onchange = langChanger;
+
+
+
+
+
+
 IDswitch();
-
-
-
 
 
 
@@ -102,6 +128,10 @@ nextPic.addEventListener('click', showSlides)
 gallBtnMX.addEventListener('click', handleGall)
 closeGallMX.addEventListener('click', handleGall)
 nextPicMX.addEventListener('click', showSlidesMX)
+
+
+
+
 
 
 

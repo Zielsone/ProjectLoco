@@ -1,3 +1,23 @@
+@media (min-width: 0px) and (max-width: 766px){
+    #langBar{
+        position: absolute;
+        top: 120px;
+       }
+}
+
+@media (min-width: 1200px) and (max-width: 1920px){
+    #langBar{
+        form{
+            margin-right: 25px;
+            select{
+                font-size: 1.5rem;
+
+            }
+        }
+       }
+}
+
+
 @media (min-width: 320px) and (max-width: 373px){
     .about{
         display: none;
@@ -22,7 +42,7 @@
     }
     #contactMX{
         display: none;
-    } 
+    }
 }
 
 
