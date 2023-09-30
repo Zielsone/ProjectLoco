@@ -96,13 +96,13 @@ const langChanger = (e) => {
     
      switch(e.target.value) {
          case 'EN':
-             location.replace(`./ProjectLoco/en/index.html`);
+             location.replace(`../en/index.html`);
              break;
          case 'ES' :
-             location.replace(`./ProjectLoco/es/index.html`);
+             location.replace(`../es/index.html`);
              break;
          case 'PL' :
-             location.replace(`./ProjectLoco/pl/index.html`);
+             location.replace(`../pl/index.html`);
      }
 
     }
